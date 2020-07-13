@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOTA2 - 刀塔官方网站 - 世外之争更新 重置世界 颠覆未来</title>
+    <link rel="stylesheet" type="text/css" href="guanWang.css">
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"> </script>
+</head>
+
+<body>
+    <!-- topnav start -->
+    <div id="dota2-topnav" class="topnav-container">
+        <!-- nav_main -->
+        <div class="nav_main">
+            <!-- navLogo -->
+            <a href="../index/index.html" title="《DOTA2》官方网站" class="nav_logo" target="_blank">《DOTA2》官方网站</a>
+
+            <!-- 导航条 -->
+            <div class="dota2-nav" id="dota2-nav">
+                <!--link_nav1 -->
+                <div class="link-div">
+                    <a href="javascript:(0);" target="_blank" class="link_nav" id="link_nav1">
+                        <span>首页</span>
+                        <span class="link_nav_e">HOME</span>
+                    </a>
+                    <div class="link_pop">
+                        <a href="javascript:(0);" target="_blank">品牌站</a>
+                        <a href="javascript:(0);" target="_blank">个人中心</a>
+                        <a href="javascript:(0);" target="_blank">神秘商店</a>
+                    </div>
+                </div>
+                <!--link_nav2 -->
+                <div class="link-div">
+                    <a href="javascript:(0);" target="_blank" class="link_nav" id="link_nav2">
+                        <span>资讯</span>
+                        <span class="link_nav_e">NEWS</span>
+                    </a>
+                    <div class="link_pop ">
+                        <a href="javascript:(0);" target="_blank">官方新闻</a>
+                        <a href="javascript:(0);" target="_blank">赛事新闻</a>
+                        <a href="javascript:(0);" target="_blank">更新日志</a>
+                        <a href="javascript:(0);" target="_blank">游戏攻略</a>
+                    </div>
+                </div>
+                <!--link_nav3 -->
+                <div class="link-div" style="background-image: none;">
+                    <a href="javascript:(0);" target="_blank" class="link_nav" id="link_nav3">
+                        <span>赛事</span>
+                        <span class="link_nav_e">TOURNAMENTS</span>
+                    </a>
+                </div>
+                <!--link_nav4 -->
+                <div class="link-div">
+                    <a href="javascript:(0);" target="_blank" class="link_nav" id="link_nav4">
+                        <span>互动</span>
+                        <span class="link_nav_e">INTERACTION</span>
+                    </a>
+                    <div class="link_pop ">
+                        <a href="javascript:(0);" target="_blank">精彩综合</a>
+                        <a href="javascript:(0);" target="_blank">官方活动</a>
+                        <a href="javascript:(0);" target="_blank">玩家论坛</a>
+                        <a href="javascript:(0);" target="_blank">新浪微博</a>
+                        <a href="javascript:;" id="j-navwxlink">官方微信</a>
+                    </div>
+                </div>
+                <!--link_nav5 -->
+                <div class="link-div">
+                    <a href="javascript:(0);" target="_blank" class="link_nav" id="link_nav5">
+                        <span>资料</span>
+                        <span class="link_nav_e">DATA</span>
+                    </a>
+                    <div class="link_pop ">
+                        <a href="javascript:(0);" target="_blank">英雄资料</a>
+                        <a href="javascript:(0);" target="_blank">物品资料</a>
+                        <a href="javascript:(0);" target="_blank">自定义地图</a>
+                        <a href="javascript:(0);" target="_blank">新手引导</a>
+                    </div>
+                </div>
+                <!--link_nav6 -->
+                <div class="link-div">
+                    <a href="javascript:(0);" target="_blank" class="link_nav" id="link_nav6">
+                        <span>服务</span>
+                        <span class="link_nav_e">SERVICE</span>
+                    </a>
+                    <div class="link_pop ">
+                        <a href="javascript:(0);" target="_blank">客服中心</a>
+                        <a href="javascript:(0);" target="_blank">在线客服</a>
+                        <a href="javascript:(0);" target="_blank">自助专区</a>
+                        <a href="javascript:(0);" target="_blank">被盗找回</a>
+                        <a href="javascript:(0);" target="_blank">忘记账号</a>
+                        <a href="../找回完美通行证/Retrieve-pass.html" target="_blank">通行证查询</a>
+                        <a href="javascript:(0);" target="_blank">家长监护</a>
+                    </div>
+                </div>
+                <!--link_nav7 -->
+                <div class="link-div">
+                    <a href="javascript:(0);" target="_blank" class="link_nav" id="link_nav7">
+                        <span>下载</span>
+                        <span class="link_nav_e">DOWNLOAD</span>
+                    </a>
+                    <div class="link_pop">
+                        <a href="https://www.dota2.com.cn/download/" target="_blank">游戏下载</a>
+                        <a href="javascript:(0);" target="_blank">精美壁纸</a>
+                        <a href="javascript:(0);" target="_blank">官方漫画</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- dota2-user -->
+            <div class="dota2-user" id="dota2-user">
+                <div class="info">
+                    <i class="nav-avatar"></i>
+                    <div class="enter-box">
+                        <p class="name">
+                            <span>您好，请&nbsp;</span>
+                            <a href="../login/login.html" target="_blank" id="dota2SingnIn">登录</a>
+                        </p>
+                        <span class="tt">登录后可进入您的个人中心</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 遮罩 -->
+        <div id="Dota2_overlay"></div>
+        <!-- 微信订阅号and服务号 -->
+        <div class="nav_wxdialog" id="j-navwxdialog">
+            <h4>扫一扫关注DOTA2官方微信公众平台</h4>        
+            <p>获取更多最新的DOTA2精彩资讯！</p>        
+            <ul>            
+                <li class="subscribe">                
+                    <i></i>                
+                    <span>DOTA2官方微信服务号</span>            
+                </li>            
+                <li class="vservice">
+                    <i></i>               
+                    <span>DOTA2官方微信订阅号</span>            
+                </li>       
+            </ul>       
+            <a href="javascript:;" class="close" id="j-wxclose"></a>
+        </div>
+    </div>
+    <!-- topnav end -->
+
+    <!-- wapper start -->
+    <div class="u_wrapper clearfix">
+        <!-- clearfix  清除浮动 -->
+        <div class="u_container">
+            <!-- 轮播图 -->
+            <div class="u_header">
+                <a class="item" id="item1" target="_blank" href="https://www.dota2.com.cn/plus/"></a>
+                <a class="item" id="item2" target="_blank" href="https://www.dota2.com.cn/flockheartsgamble/"></a>
+                <a class="item" id="item3" target="_blank" href="https://www.dota2.com.cn/article/details/20200303/215621.html"></a>
+                <!-- 前后切换 -->
+                <div class="btn prev">&lt;</div>
+                <div class="btn next">&gt;</div>
+                <!-- 按钮切换 -->
+                <ul id="tabs">
+                    <li class="tab active"></li>
+                    <li class="tab"></li>
+                    <li class="tab"></li>
+                </ul>
+            </div>
+            <!-- section 1 -->
+            <div class="u_section u_btn_section">
+                <div class="u_left_box" style="height: 95px;">
+                    <a href="https://pay.wanmei.com/new/dota2/index.do?inGame=0" target="_blank" class="u_button u_btn_recharge">
+                        <span></span>
+                    </a>
+                    <a href="https://www.dota2.com.cn/download/" target="_blank" class="u_button  u_btn_download">
+                        <span></span>
+                    </a>
+                    <a href="../注册-完美通行证/regTXZ.html" target="_blank" class="u_button u_btn_signup">
+                        <span></span>
+                    </a>
+                </div>
+                <div class="u_right_box">
+                    <a href="https://www.dota2.com.cn/zlz/index.htm" target="_blank" class="u_even u_btn_source">
+                        <span></span>
+                    </a>
+                    <a href="../register/reg.html" target="_blank" class="u_even u_btn_steps">
+                        <span></span>
+                    </a>
+                    <a href="https://www.dota2.com.cn/recruit/" target="_blank" class="u_even u_btn_min">
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+            <!-- section 2 -->
+            <div class="u_section">
+                <!-- u_left_box -->
+                <div class="u_left_box  u_news_section">
+                    <!-- u_title -->
+                    <div class="u_title">
+                        <div class="u_left">
+                            <i class="u_icon u_icon_news"></i>
+                            <span>新闻中心</span>
+                        </div>
+                        <div class="u_right">
+                            <a href="https://www.dota2.com.cn/news/index.htm" target="_blank">更多</a>
+                            <i class="u_icon u_icon_more"></i>
+                        </div>
+                    </div>
+                    <!-- u_content -->
+                    <div class="u_content">
+                        <ul class="u_tabs">
+                            <li class="u_tab u_active">综合新闻</li>
+                            <li class="u_tab">官方新闻</li>
+                            <li class="u_tab">赛事新闻</li>
+                            <li class="u_tab">更新日志</li>
+                        </ul>
+                        <ul class="u_panels">
+                            <!-- u_panel 1 -->
+                            <li class="u_panel u_active">
+                                <div class="u_lists">
+                                    <a class="u_recommend"
+                                        href="https://www.dota2.com.cn/article/details/20200503/216261.html"
+                                        target="_blank">
+                                        <h3>DOTA2 5月3日更新日志：7.26c平衡性更新</h3>
+                                        <div class="u_contents">
+                                            <div class="u_item_avatar">
+                                                <img src="https://img.dota2.com.cn/dota2/1b/e1/1be14bac914a776a2e1840dd4732df081588488079.jpg"
+                                                    alt="DOTA2 5月3日更新日志：7.26c平衡性更新">
+                                            </div>
+                                            <div class="u_msg">
+                                                <p href="https://www.dota2.com.cn/article/details/20200503/216261.html"
+                                                    target="_blank">
+                                                    本次更新主要针对英雄的天赋树做了细致调整。 </p>
+                                                <span class="u_date">2020-05-03</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="u_list u_highlight"
+                                        href="https://www.dota2.com.cn/article/details/20200508/216281.html">
+                                        <i class="u_icon u_icon_dot"></i>
+                                        <p>关于游戏内昵称变为长串数字id的解决办法</p>
+                                        <span class="u_date">2020-05-08</span>
+                                    </a>
+                                    <a class="u_list "
+                                        href="https://www.dota2.com.cn/article/details/20200506/216271.html">
+                                        <i class="u_icon u_icon_dot"></i>
+                                        <p>骑士亮剑，擂台易主！守擂赛5月10日、娱乐赛5月17日开战</p>
+                                        <span class="u_date">2020-05-06</span>
+                                    </a>
+                                    <a class="u_list u_highlight"
+                                        href="https://www.dota2.com.cn/article/details/20200501/216251.html">
+                                        <i class="u_icon u_icon_dot"></i>
+                                        <p>勇士令状稍后将至，第10届国际邀请赛推迟举办</p>
+                                        <span class="u_date">2020-05-01</span>
+                                    </a>
+                                    <a class="u_list "
+                                        href="https://www.dota2.com.cn/article/details/20200430/216241.html">
+                                        <i class="u_icon u_icon_dot"></i>
+                                        <p>毒瘤吸血还是整活成功——谈谈四号位火枪的现状</p>
+                                        <span class="u_date">2020-04-30</span>
+                                    </a>
+                                    <a class="u_list u_highlight"
+                                        href="https://www.dota2.com.cn/article/details/20200428/216231.html">
+                                        <i class="u_icon u_icon_dot"></i>
+                                        <p>DOTA2 4月28日更新日志：7.26b平衡性更新</p>
+                                        <span class="u_date">2020-04-28</span>
+                                    </a>
+                                    <a class="u_list "
+                                        href="https://www.dota2.com.cn/article/details/20200428/216221.html">
+                                        <i class="u_icon u_icon_dot"></i>
+                                        <p>4月29日联通（一）服务器线路调整公告</p>
+                                        <span class="u_date">2020-04-28</span>
+                                    </a>
+                                    <a class="u_list u_highlight"
+                                        href="https://www.dota2.com.cn/article/details/20200428/216211.html">
+                                        <i class="u_icon u_icon_dot"></i>
+                                        <p>Leopard Gaming金身不破！五一黄金周，全国守擂赛DOTA2精彩继续</p>
+                                        <span class="u_date">2020-04-28</span>
+                                    </a>
+                                </div>
+                            </li>
+                            <!-- u_panel 2 -->
+                            <li class="u_panel">
+                                <div class="u_lists">
+                                    <a class="u_recommend"
+                                        href="https://www.dota2.com.cn/article/details/20200503/216261.html"
+                                        target="_blank">
+                                        <h3>DOTA2 5月3日更新日志：7.26c平衡性更新</h3>
+                                        <div class="u_contents">
+                                            <div class="u_item_avatar">
+                                                <img src="https://img.dota2.com.cn/dota2/1b/e1/1be14bac914a776a2e1840dd4732df081588488079.jpg"
+                                                    alt="DOTA2 5月3日更新日志：7.26c平衡性更新">
+                                            </div>
+                                            <div class="u_msg">
+                                                <p href="https://www.dota2.com.cn/article/details/20200503/216261.html"
+                                                    target="_blank">
+                                                    本次更新主要针对英雄的天赋树做了细致调整。 </p>
+                                                <span class="u_date">2020-05-03</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="u_list u_highlight"
+                                        href="https://www.dota2.com.cn/article/details/20200506/216271.html">
+                                        <i class="u_icon u_icon_dot"></i>
+                                        <p>骑士亮剑，擂台易主！守擂赛5月10日、娱乐赛5月17日开战</p>
+                                        <span class="u_date">2020-05-06</span>
+                                    </a>
+                                    <a class="u_list "
+                                        href="https://www.dota2.com.cn/article/details/20200501/216251.html">
+                                        <i class="u_icon u_icon_dot"></i>
+                                        <p>勇士令状稍后将至，第10届国际邀请赛推迟举办</p>
+                                        <span class="u_date">2020-05-01</span>
+                                    </a>
+                                    <a class="u_list u_highlight"
+                                        href="https://www.dota2.com.cn/article/details/20200430/216241.html">
+                                        <i class="u_icon u_icon_dot"></i>
+                                        <p>毒瘤吸血还是整活成功——谈谈四号位火枪的现状</p>
+                                        <span class="u_date">2020-04-30</span>
+                                    </a>
+                                    <a class="u_list "
+                                        href="https://www.dota2.com.cn/article/details/20200428/216231.html">
+                                        <i class="u_icon u_icon_dot"></i>
+                                        <p>DOTA2 4月28日更新日志：7.26b平衡性更新</p>
+                                        <span class="u_date">2020-04-28</span>
+                                    </a>
+                                    <a class="u_list u_highlight"
+                                        href="https://www.dota2.com.cn/article/details/20200428/216221.html">
+                                        <i class="u_icon u_icon_dot"></i>
+                                        <p>4月29日联通（一）服务器线路调整公告</p>
+                                        <span class="u_date">2020-04-28</span>
+                                    </a>
+                                    <a class="u_list "
+                                        href="https://www.dota2.com.cn/article/details/20200428/216211.html">
+                                        <i class="u_icon u_icon_dot"></i>
+                                        <p>Leopard Gaming金身不破！五一黄金周，全国守擂赛DOTA2精彩继续</p>
+                                        <span class="u_date">2020-04-28</span>
+                                    </a>
+                                    <a class="u_list u_highlight"
+                                        href="https://www.dota2.com.cn/article/details/20200423/216171.html">
+                                        <i class="u_icon u_icon_dot"></i>
+                                        <p>剑斩群雄，俯身拾冠，SAG的黑马传奇</p>
+                                        <span class="u_date">2020-04-23</span>
+                                    </a>
+                                </div>
+                            </li>
+                            <!-- u_panel 3 -->
+                            <li class="u_panel">
+                                <div class="u_lists">
+                                    <a class="u_recommend"
+                                        href="https://www.dota2.com.cn/article/details/20200501/216251.html"
+                                        target="_blank">
+                                        <h3>勇士令状稍后将至，第10届国际邀请赛推迟举办</h3>
+                                        <div class="u_contents">
+                                            <div class="u_item_avatar">
+                                                <img src="https://img.dota2.com.cn/dota2/d9/da/d9da67bf0d69d3556bab7ef2621d589f1588295121.png"
+                                                    alt="勇士令状稍后将至，第10届国际邀请赛推迟举办">
+                                            </div>
+                                            <div class="u_msg">
+                                                <p href="https://www.dota2.com.cn/article/details/20200501/216251.html"
+                                                    target="_blank">
+                                                    第10届国际邀请赛的总奖金中也会有下一个勇士令状的25%销售额注入，而我们计划在不久后率先推出勇士令状，而不是等到赛事临近。但因为团队目前居家办公，内容也需要更长的时间来完成，所以勇士令状的推出时间会比以往至少推迟数周。
+                                                </p>
+                                                <span class="u_date">2020-05-01</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="u_list u_highlight"
+                                        href="https://www.dota2.com.cn/article/details/20200506/216271.html">
+                                        <i class="u_icon u_icon_dot"></i>
+                                        <p>骑士亮剑，擂台易主！守擂赛5月10日、娱乐赛5月17日开战</p>
+                                        <span class="u_date">2020-05-06</span>
+                                    </a>
+                                    <a class="u_list "
+                                        href="https://www.dota2.com.cn/article/details/20200428/216211.html">
+                                        <i class="u_icon u_icon_dot"></i>
+                                        <p>Leopard Gaming金身不破！五一黄金周，全国守擂赛DOTA2精彩继续</p>
+                                        <span class="u_date">2020-04-28</span>
+                                    </a>
+                                    <a class="u_list u_highlight"
+                                        href="https://www.dota2.com.cn/article/details/20200422/216201.html">
+                                        <i class="u_icon u_icon_dot"></i>
+                                        <p>擂主诞生，等你挑战！本周六DOTA2全国守擂赛精彩继续</p>
+                                        <span class="u_date">2020-04-22</span>
+                                    </a>
+                                    <a class="u_list "
+                                        href="https://www.dota2.com.cn/article/details/20200417/216141.html">
+                                        <i class="u_icon u_icon_dot"></i>
+                                        <p>【赛事信息汇总】周末赛事预告</p>
+                                        <span class="u_date">2020-04-17</span>
+                                    </a>
+                                    <a class="u_list u_highlight"
+                                        href="https://www.dota2.com.cn/article/details/20200416/216121.html">
+                                        <i class="u_icon u_icon_dot"></i>
+                                        <p>本周日DOTA2守擂赛第一周！谁将坐镇首位擂主宝座？</p>
+                                        <span class="u_date">2020-04-16</span>
+                                    </a>
+                                    <a class="u_list "
+                                        href="https://www.dota2.com.cn/article/details/20200413/216081.html">
+                                        <i class="u_icon u_icon_dot"></i>
+                                        <p>【赛事信息汇总】4月12日-13日赛况</p>
+                                        <span class="u_date">2020-04-13</span>
+                                    </a>
+                                    <a class="u_list u_highlight"
+                                        href="https://www.dota2.com.cn/article/details/20200408/216031.html">
+                                        <i class="u_icon u_icon_dot"></i>
+                                        <p>你是“攻”还是“守”？ 完美世界全国守擂赛报名开启</p>
+                                        <span class="u_date">2020-04-08</span>
+                                    </a>
+                                </div>
+                            </li>
+                            <!-- u_panel 4 -->
+                            <li class="u_panel">
+                                <a class="u_recommend"
+                                    href="https://www.dota2.com.cn/article/details/20200503/216261.html"
+                                    target="_blank">
+                                    <h3>DOTA2 5月3日更新日志：7.26c平衡性更新</h3>
+                                    <div class="u_contents">
+                                        <div class="u_item_avatar">
+                                            <img src="https://img.dota2.com.cn/dota2/1b/e1/1be14bac914a776a2e1840dd4732df081588488079.jpg"
+                                                alt="DOTA2 5月3日更新日志：7.26c平衡性更新">
+                                        </div>
+                                        <div class="u_msg">
+                                            <p href="https://www.dota2.com.cn/article/details/20200503/216261.html"
+                                                target="_blank">
+                                                本次更新主要针对英雄的天赋树做了细致调整。 </p>
+                                            <span class="u_date">2020-05-03</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a target="_blank" class="u_list u_highlight"
+                                    href="https://www.dota2.com.cn/article/details/20200428/216231.html">
+                                    <i class="u_icon u_icon_dot"></i>
+                                    <p>DOTA2 4月28日更新日志：7.26b平衡性更新</p>
+                                    <span class="u_date">2020-04-28</span>
+                                </a>
+                                <a target="_blank" class="u_list "
+                                    href="https://www.dota2.com.cn/article/details/20200422/216161.html">
+                                    <i class="u_icon u_icon_dot"></i>
+                                    <p>DOTA2 4月22日更新日志：7.26a平衡性更新</p>
+                                    <span class="u_date">2020-04-22</span>
+                                </a>
+                                <a target="_blank" class="u_list u_highlight"
+                                    href="https://www.dota2.com.cn/article/details/20200418/216151.html">
+                                    <i class="u_icon u_icon_dot"></i>
+                                    <p>DOTA2 4月18日更新日志：7.26 游戏性更新</p>
+                                    <span class="u_date">2020-04-18</span>
+                                </a>
+                                <a target="_blank" class="u_list "
+                                    href="https://www.dota2.com.cn/article/details/20200407/216011.html">
+                                    <i class="u_icon u_icon_dot"></i>
+                                    <p>DOTA2 4月7日更新日志：7.25c平衡性更新</p>
+                                    <span class="u_date">2020-04-07</span>
+                                </a>
+                                <a target="_blank" class="u_list u_highlight"
+                                    href="https://www.dota2.com.cn/article/details/20200325/215881.html">
+                                    <i class="u_icon u_icon_dot"></i>
+                                    <p>DOTA2 3月25日更新日志：7.25b平衡性更新</p>
+                                    <span class="u_date">2020-03-25</span>
+                                </a>
+                                <a target="_blank" class="u_list "
+                                    href="https://www.dota2.com.cn/article/details/20200319/215801.html">
+                                    <i class="u_icon u_icon_dot"></i>
+                                    <p>DOTA2 3月19日更新日志：7.25a平衡性更新</p>
+                                    <span class="u_date">2020-03-19</span>
+                                </a>
+                                <a target="_blank" class="u_list u_highlight"
+                                    href="https://www.dota2.com.cn/article/details/20200318/215791.html">
+                                    <i class="u_icon u_icon_dot"></i>
+                                    <p>DOTA2 3月18日更新日志：7.25游戏性更新</p>
+                                    <span class="u_date">2020-03-18</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- u_right_box -->
+                <div class="u_right_box u_races_section">
+                    <!-- 近期热点 -->
+                    <div class="u_hotvideo">
+                        <div class="u_title">
+                            <div class="u_left">
+                                <i class="u_icon u_icon_hotvideo"></i>
+                                <span>近期热点</span>
+                            </div>
+                        </div>
+                        <div class="u_content">
+                            <div class="video" style="position: relative;">
+                                <a style="position: absolute; top:0; left:0; 
+                                width: 100%; height: 100%; z-index: 3;" href="javascript:(0);" target="_blank"></a>
+                                <video style="object-fit: cover;
+                                            position: absolute; top: -50%; left: -50%;
+                                            width: 100%;  height: 100%;  z-index: 1;
+                                            transform: translate(50%,50%) scale(1);" preload="preload" muted="true"
+                                    autoplay="" autobuffer="true" id="J_main_video" loop="loop"
+                                    poster="../All-img/dota2近期热点.jpg">
+                                    <source type="video/mp4" src="../All-img/dota2近期热点.mp4">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 赛事中心 -->
+                    <div class="u_racecenter">
+                        <!-- u_title -->
+                        <div class="u_title">
+                            <div class="u_left">
+                                <i class="u_icon u_icon_games"></i>
+                                <span>赛事中心</span>
+                            </div>
+                            <div class="u_right">
+                                <a href="https://www.dota2.com.cn/activity/gamematch/index.htm" target="_blank">更多</a>
+                                <i class="u_icon u_icon_more"></i>
+                            </div>
+                        </div>
+                        <!-- u_content -->
+                        <div class="u_content">
+                            <ul class="single-item slick-initialized slick-slider" id="j-hotslide">
+                                <div aria-live="polite" class="slick-list draggable">
+                                    <div class="slick-track" role="listbox"
+                                        style="opacity: 1; width: 420px; transform: translate3d(0px, 0px, 0px);">
+                                        <li class="list slick-slide slick-current slick-active" data-slick-index="0"
+                                            aria-hidden="false" tabindex="-1" role="option"
+                                            aria-describedby="slick-slide50" style="width: 420px;">
+                                            <a href="https://www.dota2.com.cn/international/2019/overview"
+                                                title="2019刀塔国际邀请赛" target="_blank" tabindex="0">
+                                                <img src="../All-img/赛事中心.jpg" alt="2019刀塔国际邀请赛">
+                                                <span>2019刀塔国际邀请赛</span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- section 3 -->
+            <div class="u_section">
+                <!-- u_left_box -->
+                <div class="u_left_box u_activity_section">
+                    <!-- 活动中心 -->
+                    <!-- title -->
+                    <div class="u_title">
+                        <div class="u_left">
+                            <i class="u_icon u_icon_activity"></i>
+                            <span>活动中心</span>
+                        </div>
+                        <div class="u_activity_list">
+                            <div class="u_activity_type selected" data-type="1">
+                                <div class="u_border ">官方活动</div>
+                            </div>
+                            <div class="u_activity_type" data-type="2">
+                                <div class="u_border">赛事活动</div>
+                            </div>
+                            <div class="u_activity_type" data-type="3">
+                                <div class="">推广活动</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- content -->
+                    <div class="u_content">
+                        <div class="u_activity_container slick-initialized slick-slider u_activity_container_selected"
+                            id="u_activity_type_1">
+                            <div aria-live="polite" class="slick-list draggable">
+                                <div class="slick-track" role="listbox"
+                                    style="opacity: 1; width: 746px; transform: translate3d(0px, 0px, 0px);">
+                                    <div class="u_activities slick-slide slick-current slick-active"
+                                        data-slick-index="0" aria-hidden="false" tabindex="-1" role="option"
+                                        aria-describedby="slick-slide10" style="width: 666px;">
+                                        <div class="u_activity_row">
+                                            <a href="https://act.dota2.com.cn/herofantasy" target="_blank"
+                                                class="u_activity" tabindex="0">
+                                                <div class="u_activity_time u_green">进行中</div>
+                                                <span class="u_activity_logo">
+                                                    <img src="https://img.dota2.com.cn/dota2/23/57/2357f3eeace553a849f8079ff32e43371586405707.jpg"
+                                                        alt="英雄修炼之路II">
+                                                </span>
+                                                <p class="u_activity_title" title="英雄修炼之路II">英雄修炼之路II</p>
+                                            </a>
+                                            <a href="https://esports.wanmei.com/kingofthearena" target="_blank"
+                                                class="u_activity" tabindex="0">
+                                                <div class="u_activity_time u_green">进行中</div>
+                                                <span class="u_activity_logo">
+                                                    <img src="https://img.dota2.com.cn/dota2/9b/e7/9be7e0f25c7d41cfccaeed170a5052551586327119.jpg"
+                                                        alt="完美世界全国守擂赛">
+                                                </span>
+                                                <p class="u_activity_title" title="完美世界全国守擂赛">完美世界全国守擂赛</p>
+                                            </a>
+                                        </div>
+                                        <div class="u_activity_row">
+                                            <a href="https://act.dota2.com.cn/monopolygo/" target="_blank"
+                                                class="u_activity" tabindex="0">
+                                                <div class="u_activity_time u_gray">已结束</div>
+                                                <span class="u_activity_logo">
+                                                    <img src="https://img.dota2.com.cn/dota2/3f/bb/3fbb3a5cddf7eaaf3deff4ee162dfae71583386251.png"
+                                                        alt="刀塔梦想之路">
+                                                </span>
+                                                <p class="u_activity_title" title="刀塔梦想之路">刀塔梦想之路</p>
+                                            </a>
+                                            <a href="https://act.dota2.com.cn/survey-newplayers?main" target="_blank"
+                                                class="u_activity" tabindex="0">
+                                                <div class="u_activity_time u_gray">已结束</div>
+                                                <span class="u_activity_logo">
+                                                    <img src="https://img.dota2.com.cn/dota2/e5/29/e5297e109ea2f46d92c70f3bd70846d01582866027.jpg"
+                                                        alt="新玩家问卷调查">
+                                                </span>
+                                                <p class="u_activity_title" title="新玩家问卷调查">新玩家问卷调查</p>
+                                            </a>
+                                        </div>
+                                        <div class="u_activity_row">
+                                            <a href="https://esports.wanmei.com/tv" target="_blank" class="u_activity"
+                                                tabindex="0">
+                                                <div class="u_activity_time u_gray">已结束</div>
+                                                <span class="u_activity_logo">
+                                                    <img src="https://img.dota2.com.cn/dota2/8f/4f/8f4f74ef4ca6982059832d14e9c47b1e1582709938.jpg"
+                                                        alt="同心共行全明星表演赛">
+                                                </span>
+                                                <p class="u_activity_title" title="同心共行全明星表演赛">同心共行全明星表演赛</p>
+                                            </a>
+                                            <a href="https://www.dota2.com.cn/article/details/20200116/214291.html"
+                                                target="_blank" class="u_activity" tabindex="0">
+                                                <div class="u_activity_time u_red">长期</div>
+                                                <span class="u_activity_logo">
+                                                    <img src="https://img.dota2.com.cn/dota2/a3/37/a337088ccb9be524e91677f5eae14dc61579177526.png"
+                                                        alt="完美电竞APP知晓你的刀塔2019">
+                                                </span>
+                                                <p class="u_activity_title" title="完美电竞APP知晓你的刀塔2019">完美电竞APP知晓你的刀塔2019
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="u_activity_container  slick-initialized slick-slider" id="u_activity_type_2">
+                            <div aria-live="polite" class="slick-list draggable">
+                                <div class="slick-track" role="listbox"
+                                    style="opacity: 1; width: 746px; transform: translate3d(0px, 0px, 0px);">
+                                    <div class="u_activities slick-slide slick-current slick-active"
+                                        data-slick-index="0" aria-hidden="false" tabindex="-1" role="option"
+                                        aria-describedby="slick-slide20" style="width: 666px;">
+                                        <div class="u_activity_row">
+                                            <a href="https://esports.wanmei.com/kingofthearena" target="_blank"
+                                                class="u_activity" tabindex="0">
+                                                <span class="u_activity_logo">
+                                                    <img src="https://img.dota2.com.cn/dota2/9b/e7/9be7e0f25c7d41cfccaeed170a5052551586327119.jpg"
+                                                        alt="完美世界全国守擂赛">
+                                                </span>
+                                                <p class="u_activity_title" title="完美世界全国守擂赛">完美世界全国守擂赛</p>
+                                            </a>
+                                            <a href="https://www.bilibili.com/blackboard/activity-KQm-HYV7F.html?aid=51"
+                                                target="_blank" class="u_activity" tabindex="0">
+                                                <span class="u_activity_logo">
+                                                    <img src="https://img.dota2.com.cn/dota2/f4/16/f4164b8dc231a3f597de878ab7d549811585016811.jpg"
+                                                        alt="星沙杯DOTA2大赛">
+                                                </span>
+                                                <p class="u_activity_title" title="星沙杯DOTA2大赛">星沙杯DOTA2大赛</p>
+                                            </a>
+                                        </div>
+                                        <div class="u_activity_row">
+                                            <a href="https://esports.wanmei.com/solo" target="_blank" class="u_activity"
+                                                tabindex="0">
+                                                <span class="u_activity_logo">
+                                                    <img src="https://img.dota2.com.cn/dota2/88/2a/882a5b68a03ed36b273c529e8cd3e2e71573210990.png"
+                                                        alt="完美世界SOLO路人王">
+                                                </span>
+                                                <p class="u_activity_title" title="完美世界SOLO路人王">完美世界SOLO路人王</p>
+                                            </a>
+                                            <a href="https://esports.wanmei.com/citychallenge" target="_blank"
+                                                class="u_activity" tabindex="0">
+                                                <span class="u_activity_logo">
+                                                    <img src="https://img.dota2.com.cn/dota2/b5/eb/b5eb333a17b80856dfe253b5357611da1570606617.jpg"
+                                                        alt="2019完美世界城市挑战赛 秋季赛">
+                                                </span>
+                                                <p class="u_activity_title" title="2019完美世界城市挑战赛 秋季赛">2019完美世界城市挑战赛 秋季赛
+                                                </p>
+                                            </a>
+                                        </div>
+                                        <div class="u_activity_row">
+                                            <a href="https://esports.wanmei.com/collegeleague" target="_blank"
+                                                class="u_activity" tabindex="0">
+                                                <span class="u_activity_logo">
+                                                    <img src="https://img.dota2.com.cn/dota2/93/e7/93e7c1754b4e5fcccbe78139f85fbb2f1568609820.png"
+                                                        alt="2019完美世界高校联赛 秋季赛">
+                                                </span>
+                                                <p class="u_activity_title" title="2019完美世界高校联赛 秋季赛">2019完美世界高校联赛 秋季赛
+                                                </p>
+                                            </a>
+                                            <a href="https://www.dota2.com.cn/international/2019/overview"
+                                                target="_blank" class="u_activity" tabindex="0">
+                                                <span class="u_activity_logo">
+                                                    <img src="https://img.dota2.com.cn/dota2/e9/6b/e96bf9942f67de9a240b207f1d6a29911566293238.jpg"
+                                                        alt="2019刀塔国际邀请赛">
+                                                </span>
+                                                <p class="u_activity_title" title="2019刀塔国际邀请赛">2019刀塔国际邀请赛</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="u_activity_container  slick-initialized slick-slider " id="u_activity_type_3">
+                            <div aria-live="polite" class="slick-list draggable">
+                                <div class="slick-track" role="listbox"
+                                    style="opacity: 1; width: 746px; transform: translate3d(0px, 0px, 0px);">
+                                    <div class="u_activities slick-slide slick-current slick-active"
+                                        data-slick-index="0" aria-hidden="false" tabindex="-1" role="option"
+                                        aria-describedby="slick-slide30" style="width: 666px;">
+                                        <div class="u_activity_row">
+                                            <a href="https://pro.jd.com/mall/active/2WEJdLjKNHBQLwFskwjqCqrv6xyM/index.html"
+                                                target="_blank" class="u_activity" tabindex="0">
+                                                <span class="u_activity_logo">
+                                                    <img src="https://img.dota2.com.cn/dota2/88/b0/88b0aa23d0f462c57b21a171276322261586503084.jpg"
+                                                        alt="AMD助力完美线上赛">
+                                                </span>
+                                                <p class="u_activity_title" title="AMD助力完美线上赛">AMD助力完美线上赛</p>
+                                            </a>
+                                            <a href="https://mall.jd.com/index-1000000243.html" target="_blank"
+                                                class="u_activity" tabindex="0">
+                                                <span class="u_activity_logo">
+                                                    <img src="https://img.dota2.com.cn/dota2/54/e5/54e52f177e4d53bab49df25075653db11579145192.jpg"
+                                                        alt="赛睿助力完美世界城市挑战赛">
+                                                </span>
+                                                <p class="u_activity_title" title="赛睿助力完美世界城市挑战赛">赛睿助力完美世界城市挑战赛</p>
+                                            </a>
+                                        </div>
+                                        <div class="u_activity_row">
+                                            <a href="https://item.jd.com/100003226990.html" target="_blank"
+                                                class="u_activity" tabindex="0">
+                                                <span class="u_activity_logo">
+                                                    <img src="https://img.dota2.com.cn/dota2/16/ff/16ffe8d3207a5778d86ed323997035421560506727.jpg"
+                                                        alt="西部数据助力完美世界城市挑战赛">
+                                                </span>
+                                                <p class="u_activity_title" title="西部数据助力完美世界城市挑战赛">西部数据助力完美世界城市挑战赛</p>
+                                            </a>
+                                            <a href="https://pro.jd.com/mall/active/2WEJdLjKNHBQLwFskwjqCqrv6xyM/index.html"
+                                                target="_blank" class="u_activity" tabindex="0">
+                                                <span class="u_activity_logo">
+                                                    <img src="https://img.dota2.com.cn/dota2/32/e9/32e96fca5d0c6fdf7a247fb0d27e1d081575440989.jpg"
+                                                        alt="AMD倾力支持2019完美盛典">
+                                                </span>
+                                                <p class="u_activity_title" title="AMD倾力支持2019完美盛典">AMD倾力支持2019完美盛典</p>
+                                            </a>
+                                        </div>
+                                        <div class="u_activity_row">
+                                            <a href="http://top.gegia.cn/index.php/Game/show/id/49.html" target="_blank"
+                                                class="u_activity" tabindex="0">
+                                                <span class="u_activity_logo">
+                                                    <img src="https://img.dota2.com.cn/dota2/23/a5/23a572d11eafc9b601c45d079b7d61761574659609.jpg"
+                                                        alt="2019游戏金钻榜 为刀塔投上你的一票">
+                                                </span>
+                                                <p class="u_activity_title" title="2019游戏金钻榜 为刀塔投上你的一票">2019游戏金钻榜
+                                                    为刀塔投上你的一票</p>
+                                            </a>
+                                            <a href="https://detail.tmall.com/item.htm?id=598843378494&amp;skuId=4172405236561"
+                                                target="_blank" class="u_activity" tabindex="0">
+                                                <span class="u_activity_logo">
+                                                    <img src="https://img.dota2.com.cn/dota2/e4/ea/e4ea8df8161746af7029802abac306ed1568258957.png"
+                                                        alt="Razer雷蛇助力完美世界高校联赛">
+                                                </span>
+                                                <p class="u_activity_title" title="Razer雷蛇助力完美世界高校联赛">Razer雷蛇助力完美世界高校联赛
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- more -->
+                        <a class="a_activityes" href="https://www.dota2.com.cn/activity/gameevent/index.htm" target="_blank">
+                            <div class="u_activityes"></div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- u_right_box -->
+                <div class="u_right_box">
+                    <!-- 版本更新 -->
+                    <div class="u_version" id="j-version">
+                        <div class="u_title">
+                            <div class="u_left">
+                                <i class="u_icon u_icon_version"></i>
+                                <span>版本更新</span>
+                            </div>
+                            <div class="u_right">
+                                <a href="https://www.dota2.com.cn/activity/gameversion/index.htm" target="_blank">更多</a>
+                                <i class="u_icon u_icon_more"></i>
+                            </div>
+                        </div>
+                        <div class="u_content">
+                            <ul class="u_lists roundabout-holder" style="padding: 0px;">
+                                <li class="u_list roundabout-moveable-item "
+                                    style="width: 420px; height: 100%; z-index: 280; font-size: 16px;">
+                                    <a href="javascript:void(0);">
+                                        <span class="u_version_logo">
+                                            <img src="../All-img/版本更新1.jpg" alt="7.26c平衡性更新">
+                                        </span>
+                                        <p class="u_version_title"><span>7.26c平衡性更新</span></p>
+                                        <i class="u_version_new">当前游戏版本</i>
+                                    </a>
+                                </li>
+                                <li class="u_list roundabout-moveable-item"
+                                    style="width: 420px; height: 100%; z-index: 280; font-size: 16px;">
+                                    <a href="javascript:void(0);">
+                                        <span class="u_version_logo">
+                                            <img src="../All-img/版本更新2.jpg" alt="7.26b平衡性更新">
+                                        </span>
+                                        <p class="u_version_title">
+                                            <span>7.26b平衡性更新</span>
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="u_list roundabout-moveable-item"
+                                    style="width: 420px; height: 100%;  z-index: 280; font-size: 16px;">
+                                    <a href="javascript:void(0);">
+                                        <span class="u_version_logo">
+                                            <img src="../All-img/版本更新3.jpg" alt="7.26a平衡性更新">
+                                        </span>
+                                        <p class="u_version_title"><span>7.26a平衡性更新</span></p>
+                                    </a>
+                                </li>
+                                <li class="u_list roundabout-moveable-item"
+                                    style="width: 420px;  height: 100%;  z-index: 280; font-size: 16px;">
+                                    <a href="javascript:void(0);">
+                                        <span class="u_version_logo">
+                                            <img src="../All-img/版本更新4.jpg" alt="7.25版本更新">
+                                        </span>
+                                        <p class="u_version_title"><span>7.25版本更新</span></p>
+                                    </a>
+                                </li>
+                                <li class="u_list roundabout-moveable-item"
+                                    style="width: 420px; height: 100%;  z-index: 280; font-size: 16px;">
+                                    <a href="javascript:void(0);">
+                                        <span class="u_version_logo">
+                                            <img src="../All-img/版本更新5.jpg" alt="7.24版本更新"></span>
+                                        <p class="u_version_title"><span>7.24版本更新</span></p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 客服中心 -->
+                    <div class="u_right_box u_call_section">
+                        <div class="u_title">
+                            <div class="u_left">
+                                <i class="u_icon u_icon_call"></i>
+                                <span>客服中心</span>
+                            </div>
+                            <div class="u_right">
+                                <a href="https://kf.dota2.com.cn/" target="_blank">更多</a>
+                                <i class="u_icon u_icon_more"></i>
+                            </div>
+                        </div>
+                        <div class="u_content">
+                            <div class="u_search">
+                                <form method="get" action="https://kf.dota2.com.cn/home/search">
+                                    <div class="u_inputgrounp">
+                                        <input type="text" name="q" value="" placeholder="输入您的问题">
+                                        <i class="u_icon u_icon_search"></i>
+                                        <input type="submit" value="" class="u_btn_submit">搜索
+                                    </div>
+                                </form>
+                                <a class="u_btn_add" href="https://kf.dota2.com.cn/home/search" target="_blank">我要提问</a>
+                            </div>
+                            <div class="u_questions">
+                                <h3>常见问题</h3>
+                                <div class="u_lists">
+                                    <a target="_blank" class="u_list u_red" href="javascript:(0);">
+                                        <i class="u_icon u_icon_dot mt0"></i>
+                                        <p>如何找回与DOTA2账户绑定的完美通行证？</p>
+                                    </a>
+                                    <a target="_blank" class="u_list" href="javascript:(0);">
+                                        <i class="u_icon u_icon_dot mt0"></i>
+                                        <p>为什么我需要注册两个账号？</p>
+                                    </a>
+                                    <a target="_blank" class="u_list" href="javascript:(0);">
+                                        <i class="u_icon u_icon_dot mt0"></i>
+                                        <p>如何注册DOTA2账号？</p>
+                                    </a>
+                                    <a target="_blank" class="u_list" href="javascript:(0);">
+                                        <i class="u_icon u_icon_dot mt0"></i>
+                                        <p>如何绑定完美通行证（完美电竞账号）？</p>
+                                    </a>
+                                    <a target="_blank" class="u_list" href="javascript:(0);">
+                                        <i class="u_icon u_icon_dot mt0"></i>
+                                        <p>进入客户端后【运行DOTA2】按钮无法点击，怎么办？</p>
+                                    </a>
+                                    <a target="_blank" class="u_list" href="javascript:(0);">
+                                        <i class="u_icon u_icon_dot mt0"></i>
+                                        <p>《DOTA2》概率与结果公示信息</p>
+                                    </a>
+                                    <a target="_blank" class="u_list" href="javascript:(0);">
+                                        <i class="u_icon u_icon_dot mt0"></i>
+                                        <p>运行游戏后显示“正在连接到DOTA2网络”, 怎么办？</p>
+                                    </a>
+                                    <a target="_blank" class="u_list" href="javascript:(0);">
+                                        <i class="u_icon u_icon_dot mt0"></i>
+                                        <p>如何查看自己的数字ID？</p>
+                                    </a>
+                                    <a target="_blank" class="u_list" href="javascript:(0);">
+                                        <i class="u_icon u_icon_dot mt0"></i>
+                                        <p>《DOTA2》官方活动奖励信息</p>
+                                    </a>
+                                    <a target="_blank" class="u_list" href="javascript:(0);">
+                                        <i class="u_icon u_icon_dot mt0"></i>
+                                        <p>游廊地图付费内容概率公示</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 展开 -->
+                    <div class="scaling_patterns arrows_unfold">
+                        <span>展开</span>
+                        <div class="arrows_img unfold"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- 回到顶部 -->
+            <div class="anchor" id="anchor">
+                <a href="javascript:(0)">
+                    <i class="icon icon-anchor"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- wapper end -->
+
+    <!-- bottom start -->
+    <div class="bottom">
+        <div class="rel">
+            <dl class="foot_dl">
+                <dt>
+                    <!-- 完美世界.png -->
+                    <a class="wanmei" href="javascript:(0);" target="_blank">
+                        <img src="../All-img/index-logo-wanmei20180327.png" alt>
+                    </a>
+                    <!-- Value.png -->
+                    <a href="javascript:(0);" target="_blank">
+                        <img src="../All-img/index-logo-valve.png" alt>
+                    </a>
+                </dt>
+                <dd>
+                    © 完美世界 版权所有　Perfect World. All Rights Reserved.
+                    <br> © 2012 Valve Corporation. All Rights reserved. Licensed to Beijing Perfect World Network
+                    Technology Co., Ltd. in China
+                </dd>
+            </dl>
+            <p class="certificate">
+                京ICP证：050016号
+                <a href="javascript:(0);" target="_blank" style="color:#959595;">《网络文化经营许可证》编号：京网文[2017]8929-1007号</a>
+                《网络视听许可证》编号：0110587
+                <br> 京公网安备11010502033859号
+                <a href="javascript:(0);" target="_blank" style="color:#959595">
+                    <img src="../All-img/index-icon-gamenettag.png"> 文网进字[2013] 028号
+                </a>
+                新出审字<a href="javascript:(0);" style="color: #53bdfa;text-decoration: underline;" target="_blank">[2013] 1505号</a>
+                ISBN：978-7-89989-826-0 |
+                <a href="javascript:(0);" style="color:#53bdfa;" target="_blank">家长监护</a> "|"
+                <a href="javascript:(0);" style="color:#53bdfa;" target="_blank">纠纷处理</a> "|"
+                <a href="javascript:(0);" style="color:#53bdfa;" target="_blank">营业执照</a> "|"
+                <a href="javascript:(0);" style="color:#53bdfa;" target="_blank">儿童隐私保护指引</a>
+            </p>
+            <p class="remark">本网络游戏适合年满17岁以上的用户使用：请您确定已如实进行实名注册。为了您的健康，请合理控制游戏时间。</p>
+        </div>
+    </div>
+    <!-- bottom end -->
+</body>
+<script>
+    // 下拉菜单
+    $(function () {
+        $('.link-div').mouseenter(function () {
+            $(this).children('div').show();
+        });
+        $('.link-div').mouseleave(function () {
+            $('.link_pop').hide();
+        });
+    });
+
+    // 轮播图
+    $(function () {
+        var i = 0;
+        var timer;
+        //用jquery方法设置第一张图片显示，其余隐藏
+        $('.item').eq(0).show().siblings('.item').hide();
+        //调用showTime()函数（轮播函数）
+        showTime();
+        //当鼠标经过下面的数字时，触发两个事件（鼠标悬停和鼠标离开）
+        $('.tab').hover(function () {
+            //获取当前i的值，并显示，同时还要清除定时器
+            i = $(this).index();
+            Show();
+            clearInterval(timer);
+        }, function () {
+            showTime();
+        });
+        //鼠标点击左侧的箭头
+        $('.prev').click(function () {
+            clearInterval(timer);
+            if (i == 0) {
+                i = 3; //注意此时i的值
+            }
+            i--;
+            Show();
+            showTime();
+        });
+        //鼠标点击右侧的箭头
+        $('.next').click(function () {
+            clearInterval(timer);
+            if (i == 2) {
+                i = -1; //注意此时i的值
+            }
+            i++;
+            Show();
+            showTime();
+        });
+        //创建一个showTime函数
+        function showTime() {
+            //定时器
+            timer = setInterval(function () {
+                //调用一个Show()函数
+                Show();
+                i++;
+                //当图片是最后一张的后面时，设置图片为第一张
+                if (i == 3) {
+                    i = 0;
+                }
+            }, 5000);
+        }
+        //创建一个Show函数
+        function Show() {
+            //在这里可以用其他jquery的动画
+            $('.item').eq(i).fadeIn(1000).siblings('.item').fadeOut(1000);
+            //给.tab创建一个新的Class为其添加一个新的样式，并且要在css代码中设置该样式
+            $('.tab').eq(i).addClass('active').siblings('.tab').removeClass('active');
+        }
+    });
+
+    // 新闻中心按钮
+    $(function () {
+        $('.u_tab').click(function () {
+            $(this).addClass('u_active').siblings().removeClass('u_active');
+            var tabIndex = $(this).index();
+            //  是class 的时候记得加个  ‘ . ’   例如 $('.u_panels li')
+            $('.u_panels li').eq(tabIndex).addClass('u_active').siblings().removeClass('u_active');
+        });
+    });
+
+    // 活动中心按钮
+    $(function () {
+        $('.u_activity_type').click(function () {
+            //  加class的同时去掉除了当前的以外兄弟元素的class
+            $(this).addClass('selected').siblings().removeClass('selected');
+            var tabIndex = $(this).index();
+            // 又忘记选择器$('')要加  . 或者 #  以至于摸索很久没弄出来功能
+            $('.u_activity_container').eq(tabIndex).addClass('u_activity_container_selected').siblings().removeClass('u_activity_container_selected');
+        });
+    });
+
+    //版本更新轮播
+    $(function(){
+        var i = 0;
+        var timer;
+        $('.roundabout-moveable-item').eq(0).show().siblings().hide();
+        showTime();
+        function showTime() {
+            //定时器
+            timer = setInterval(function () {
+                Show();
+                i++;
+                if (i == 5) {
+                    i = 0;
+                }
+            }, 4000);
+        }
+        function Show() {
+            $('.roundabout-moveable-item').eq(i).fadeIn(1000).siblings().fadeOut(1000);
+        }
+    });
+
+    // 客服中心展开
+    $(function(){
+        $('.scaling_patterns').click(function(){
+            if($(this).hasClass("arrows_unfold")){
+                // hasClass()   检测是否包含该类名
+                // animate()    动画
+                //find() 方法返回被选元素的后代元素,后代是子、孙、曾孙，依此类推
+                // html() 方法返回或设置被选元素的内容 (inner HTML)。
+                $(this).removeClass('arrows_unfold').addClass('arrows_scaling');
+                $(".u_call_section .u_content").animate({height:470},"slow");
+                $('.scaling_patterns').find('span').html('收起');
+                $('.scaling_patterns').find('.arrows_img').removeClass('unfold').addClass('scaling');
+            }
+            else if($(this).hasClass("arrows_scaling")){
+                $(this).removeClass('arrows_scaling').addClass('arrows_unfold');
+                $(".u_call_section .u_content").animate({height:327},"slow");
+                $('.scaling_patterns').find('span').html('展开');
+                $('.scaling_patterns').find('.arrows_img').removeClass('scaling').addClass('unfold');
+            }
+        });
+    });
+
+    //回到顶部 
+    $(window).on('scroll',function(){
+        // 判断是否回到浏览器顶部
+        // 如果回到顶部则按钮消失
+        // 如果不在顶部则显示   且点击回到顶部
+	    var scrolled = $(window).scrollTop(); 
+	    if(scrolled > 100){
+	        $(".anchor").show();
+            $(".anchor").click(function() {
+                $("html,body").animate({scrollTop:0}, 500);
+            }); 
+        }
+        else{
+	        $(".anchor").hide();
+        }
+    });
+
+    // 官方微信
+    $(function(){
+        $('#j-navwxlink').click(function(){
+            $('#Dota2_overlay').css('display','block');
+            $('#j-navwxdialog').css('display','block');
+        });
+        $('#j-wxclose').click(function(){
+            $('#Dota2_overlay').css('display','none');
+            $('#j-navwxdialog').css('display','none');
+        });
+    })
+</script>
+
+</html>

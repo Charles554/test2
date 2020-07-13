@@ -1,0 +1,130 @@
+/* topnav start */
+.topnav-container { 
+    width: 100%;
+    height: 80px;
+    background: url(./Reg-img/data2.home.nav.bg.png);
+    box-sizing: content-box;
+    color: #827c79;
+    font-size: 16px;
+}
+
+.nav-clearfix{
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+}
+
+    /* navLogo */
+.nav-clearfix .nav_logo {
+    display: block;
+    float: left;
+    width: 260px;
+    height: 40px;
+    margin-top: 20px;
+    margin-right: 20px;
+    text-indent: -1000px;
+    background: url(./Reg-img/dota2.home.log.png) center top no-repeat;    
+}
+    /* navLogo end */
+
+    /* dota2nav */
+.nav-clearfix .dota2-nav {
+    display: block;
+    float: left;
+    width:644px;
+    height: 100%;
+}
+.dota2-nav .link-div{
+    position: relative;
+    float: left;
+    padding: 20px 7px ;
+    text-align: center;
+    width: 78px;
+}
+.dota2-nav .link-div a{
+    display: block;
+    font-size: 15px;
+    color: #827c79;
+}
+.dota2-nav .link-div span{
+    display: block;
+    font-size: 16px;
+}
+.dota2-nav .link-div .link_nav_e{
+    margin-top: 2px;
+    font-size: 12px;
+    line-height: 16px;
+    transform: scale(0.75);    /* 把字体缩小为原来的0.75倍*/
+}
+/* 下拉导航栏 */
+.dota2-nav.link-div.link-pop{
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    padding-top: 10px;
+    width: 100%;
+    height: 278px;
+    font-size: 15px;
+    line-height: 30px;
+    text-align: center;
+    background: url(./Reg-img/data2.home.submenu.bg.png) top center no-repeat;
+    background-size: cover;
+}
+
+    /* dota2-nav end */
+
+    /* dota2-user */
+.nav-clearfix .dota2-user {
+    position: relative;
+    display: block;
+    float: right;
+    width:234px;
+    height: 100%;
+    color: #ccc;
+}
+.nav-clearfix .dota2-user .info{
+    margin-left: 65px;
+    height: 100%;
+}
+.nav-clearfix .dota2-user .nav-avatar{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 0;
+    top: 13px;
+    border-radius: 50%;
+    border: 1px solid #262323;
+    box-sizing: content-box;
+    background-color: #101215;
+    background-image: url(./Reg-img/icons.png);
+    background-position: 13px -451px;
+}
+.nav-clearfix .dota2-user .enter-box{
+    margin-top: 17px;
+    display: block;
+}
+.nav-clearfix .dota2-user .name{
+    font-size: 18px;
+    color: #00b7f4;
+    line-height: 1.2;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0;
+    margin-bottom: 3px;
+}
+.nav-clearfix .dota2-user .name span{
+    color: #fff;
+}
+.nav-clearfix .dota2-user .name a{
+    color: #00b7f4;
+}
+.nav-clearfix .dota2-user .tt{
+    font-size: 12px;
+    color: #898989;
+    padding: 0;
+    line-height: 1.5;
+}
+    /* dota2-user end*/
+/* topnav end */

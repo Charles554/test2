@@ -1,0 +1,386 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+a,a:hover{
+    text-decoration: none;
+}
+ol,ul{
+    list-style: none;
+}
+
+body{
+    background: url(../All-img/bg-dota2.jpg) 50% 80px no-repeat #000 !important;
+}
+/* --------------------------------------- */
+/* topnav start */
+.topnav-container { 
+    width: 100%;
+    height: 80px;
+    background: url(../All-img/data2.home.nav.bg.png);
+    box-sizing: content-box;
+    color: #827c79;
+    font-size: 16px;
+}
+
+.nav_main{
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+}
+
+    /* navLogo */
+.nav_main .nav_logo {
+    display: block;
+    float: left;
+    width: 260px;
+    height: 40px;
+    margin-top: 20px;
+    margin-right: 20px;
+    text-indent: -1000px;
+    background: url(../All-img/dota2.home.log.png) center top no-repeat;    
+}
+    /* navLogo end */
+
+    /* dota2nav */
+.nav_main .dota2-nav {
+    display: block;
+    float: left;
+    width:644px;
+    height: 100%;
+}
+.dota2-nav .link-div{
+    position: relative;
+    float: left;
+    width: 78px;
+    padding: 20px 7px ;
+    text-align: center;
+}
+.dota2-nav .link-div:hover{
+    background-color: #0E1113;
+}
+
+.dota2-nav .link-div a{
+    display: block;
+    font-size: 15px;
+    color: #827c79;
+}
+.dota2-nav .link-div span{
+    display: block;
+    font-size: 16px;
+}
+.dota2-nav .link-div .link_nav_e{
+    margin-top: 2px;
+    font-size: 12px;
+    line-height: 16px;
+    transform: scale(0.75);    /* 把字体缩小为原来的0.75倍*/
+}
+/* 下拉导航栏 */
+.nav_main .dota2-nav .link-div .link_pop {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    padding-top: 10px;
+    width: 100%;
+    height: 278px;
+    font-size: 15px;
+    line-height: 30px;
+    text-align: center;
+    background: url(../All-img/data2.home.submenu.bg.png) top center no-repeat;
+    background-size: cover;
+}
+.link-div .link_pop a:hover{
+    color: #00b7f4;
+}
+    /* dota2-nav end */
+
+    /* dota2-user */
+.nav_main .dota2-user {
+    position: relative;
+    display: block;
+    float: right;
+    width:234px;
+    height: 100%;
+    color: #ccc;
+}
+.nav_main .dota2-user .info{
+    margin-left: 65px;
+    height: 100%;
+}
+.nav_main .dota2-user .nav-avatar{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 0;
+    top: 13px;
+    border-radius: 50%;
+    border: 1px solid #262323;
+    box-sizing: content-box;
+    background-color: #101215;
+    background-image: url(../All-img/icons.png);
+    background-position: 13px -451px;
+}
+.nav_main .dota2-user .enter-box{
+    margin-top: 17px;
+    display: block;
+}
+.nav_main .dota2-user .name{
+    font-size: 18px;
+    color: #00b7f4;
+    line-height: 1.2;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0;
+    margin-bottom: 3px;
+}
+.nav_main .dota2-user .name span{
+    color: #fff;
+}
+.nav_main .dota2-user .name a{
+    color: #00b7f4;
+}
+.nav_main .dota2-user .tt{
+    font-size: 12px;
+    color: #898989;
+    padding: 0;
+    line-height: 1.5;
+}
+    /* dota2-user end*/
+
+    
+/* 遮罩 */
+#Dota2_overlay {
+    background-color: #000;
+    display: none;
+    height: 100% !important;
+    left: 0;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    z-index: 1003;
+}
+
+/* 微信订阅号 */
+.nav_wxdialog {
+    display: none;
+    position: fixed;
+    z-index: 1004;
+    width: 620px;
+    height: 385px;
+    left: 50%;
+    top: 50%;
+    margin: -192px 0 0 -310px;
+    background: #2a282c url(../All-img/navwx_bg.jpg) no-repeat top center;
+    text-align: center;
+    color: #fff;
+}
+.nav_wxdialog h4 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 54px 0 14px 0;
+}
+.nav_wxdialog p {
+    font-size: 16px;
+    margin-bottom: 45px;
+    color: #999999;
+}
+.nav_wxdialog li {
+    display: inline-block;
+    width: 156px;
+    height: 196px;
+    margin: 0 20px;
+}
+.nav_wxdialog li i {
+    display: block;
+    width: 156px;
+    height: 156px;
+    background-color: #fff;
+}
+.nav_wxdialog .subscribe i {
+    background-image: url(../All-img/navwx_subscribe.png);
+}
+.nav_wxdialog li span {
+    font-size: 14px;
+    line-height: 40px;
+}
+.nav_wxdialog .vservice i {
+    background-image: url(../All-img/navwx_vservice.png);
+}
+.nav_wxdialog .close {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: #3c2728;
+    right: -61px;
+    top: 0;
+}
+.nav_wxdialog .close:after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: url(../All-img/navwx_close.png);
+    opacity: 0.6;
+}
+/* topnav end */
+/* --------------------------------------- */
+
+/* container */
+.container {
+    max-width: 1050px;
+    height: 879px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.container .wrapper{
+    width: 520px;
+    float: right;
+    padding-top: 95px;
+    margin-bottom: 90px;
+}
+.container .wrapper .headTitle{
+    font-size: 20px;
+    font-weight: 700;
+}
+.container .wrapper .desc{
+    font-size: 14px;
+}
+.container .wrapper .mBody{
+    height: 614px;
+    width: 520px;
+    border: red 2px solid;
+    margin-top: 10px;
+    font-size: 14px;
+}
+.container .wrapper .mBody label{
+    float: left;
+    width: 160px;
+    height: 38px;
+    text-align: right;
+    margin-top: 30px;
+}
+.container .wrapper .mBody input{
+    width: 212px;
+    height: 36px;
+    line-height: 38px;
+    padding: 0 9px;
+    border: 1px solid #ddd;
+    box-shadow: 0px 0px 2px #ddd inset;
+    float: left;
+    font-size: 14px;
+    margin: 20px 5px 0 0;
+}
+.container .wrapper .mBody .yzmBox{
+    float: left;
+    z-index: 999;
+    position: relative;
+}
+.wrapper .mBody .yzmBox .yzm{
+    width: 92px;
+    height: 36px;
+    line-height: 38px;
+    padding: 0 9px;
+    border: 1px solid #ddd;
+    box-shadow: 0px 0px 2px #ddd ;
+    float: left;
+    font-size: 14px;
+    margin: 20px 10px 0 0;
+}
+.wrapper .mBody .yzmBox .send{
+    height: 36px;
+    display: block;
+    float: left;
+    text-align: center;
+    border: 1px solid #ddd;
+    margin-left: 0px;
+    color: #959595;
+    cursor: pointer;
+    font-size: 12px;
+}
+.wrapper .mBody .btn{
+    font-size: 16px;
+    line-height: 44px;
+    color: #fff;
+    border: 1px solid #ad0000;
+    box-shadow: 0px 0px 2px #e65253 ;
+    padding: 10px 50px;     /* 因为是a标签  所以要利用padding 代替宽高*/
+    margin: 0 0 0 161px;
+    border-radius: 2px;
+    background: #dc1415;
+    text-align: center;
+    text-decoration: none;
+}
+/* container end */
+/* --------------------------------------- */
+
+/* bottom start */
+.bottom {
+    position:relative;
+    height: 180px;
+    color: #959595;
+    font-size: 12px;
+    background-color: #000;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+.bottom .rel {
+        position: relative ;
+        margin: 0 auto;
+        width: 1128px;
+}
+.foot_dl {
+    position: absolute;
+    top: 40px;
+}
+.foot_dl dt {
+    float: left;
+    padding-left: 15px;
+}
+
+.foot_dl dt a.wanmei {
+    border-right: 1px solid black;
+}
+
+.foot_dl dt a {
+    float: left;
+    padding: 0 11px;
+}
+
+.foot_dl dd {
+    float: right;
+    font-size: 12px;
+    margin: 0;
+    line-height: 1.25rem;
+    max-width: 824px;
+    text-align: left;
+}
+
+.bottom .rel .certificate {
+    position: absolute;
+    top: 85px;
+    left: 85px;
+    color: #333;
+}
+
+.bottom .rel .remark {
+    position: absolute;
+    top: 122px;
+    left: 260px;
+    line-height: 1.5;
+    font-size: 12px;
+    color: #333;
+    text-align: center;
+}

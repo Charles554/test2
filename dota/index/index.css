@@ -1,0 +1,385 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+*:before {
+    box-sizing: inherit;
+}
+
+*:after {
+    box-sizing: inherit;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    outline: 0;
+}
+
+img {
+    border: 0;
+}
+
+body {
+    background-color: #000 !important;
+    background: url(index-img/indexbg.jpg) center top no-repeat;
+    position: relative;
+    overflow-x: hidden;
+    max-width: 1920px;
+    min-width: 1337px;
+    min-height: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.header {
+    position: relative;
+    z-index: 1;
+}
+
+.header .navbar {
+    position: relative;
+    width: 1220px;
+    margin: 0 auto;
+}
+
+.header .top-nav li {
+    width: 128px;
+    float: left;
+    text-align: center;
+    margin-left: 58px;
+    padding-top: 55px;
+    padding-bottom: 2px
+}
+
+.header .top-nav li:first-child {
+    margin-left: 0;
+}
+
+.header .top-nav li:first-child+li+li+li {
+    margin-left: 218px;
+}
+
+.header .top-nav li a {
+    position: relative;
+    display: block;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 1px;
+    line-height: 100%;
+}
+.header .top-nav li a:hover::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 7px;
+    width: 100%;
+    height: 3px;
+    background-color: #7049cb;
+    z-index: -1;
+}
+.header .top-nav li a:hover {
+    color: #fff;
+}
+
+.dota2-logo-box {
+    position: absolute;
+    background: url(index-img/index-dota2-logo.png);
+    top: 23px;
+    left: 50%;
+    width: 189px;
+    height: 83px;
+    overflow: hidden;
+    margin-left: -94px;
+}
+
+.dota2-logo {
+    display: block;
+    height: 100%;
+}
+
+
+/* header end */
+
+.wrapper {
+    position: relative;
+    min-height: 1060px;
+}
+
+.wrapper .banner {
+    position: relative;
+    width: 100%;
+    height: 1138px;
+    padding-top: 119px;
+}
+
+.banner .banner-layers {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.banner .banner-layers li {
+    /* 英雄，见证不朽 */
+    position: absolute;
+    width: 730px;
+    height: 235px;
+    background-image: url(index-img/index-layer3.png);
+    bottom: 296px;
+    left: 50%;
+    margin-left: -378px;
+}
+
+.banner .mark-footer {
+    position: absolute;
+    bottom: -142px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background: url(index-img/index-bg.png) no-repeat center top;
+    height: 301px;
+    z-index: 2;
+}
+/* banner end */
+
+
+/* cover-content start */
+.cover-content {
+    position: absolute;
+    left: 50%;
+    bottom: 64px;
+    width: 1200px;
+    margin-left: -600px;
+    text-align: center;
+    z-index: 9;
+}
+
+.cover-content .mask,
+.cover-content a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.cover-content .cover-group {
+    position: relative;
+	bottom: 0px;
+    height: 100%;
+    box-sizing: border-box;
+    transition: 0.5s ease;
+    opacity: 1;
+}
+
+.cover-content .cover-group img {
+    width: 330px;
+    height: 100%;
+}
+
+.cover-content li {
+    position: relative;
+    width: 340px;
+    height: 183px;
+    float: left;
+    margin-left: 90px;
+}
+
+.cover-content h4 {
+    position: relative;
+    visibility: hidden;
+    opacity: 0;
+	margin-top: 0;
+    font-size: 18px;
+    color: #8b64cd;
+    transition: all 0.5s ease;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.cover-content li:hover h4 {
+    display: block;
+    opacity: 1;
+    visibility: inherit;
+}
+
+.cover-content a {
+    z-index: 2;
+}
+
+.cover-content li:first-child {
+    margin-left: 0;
+}
+
+.cover-content li .border-tip {
+    /* 框1 */
+    position: absolute;
+    width: 366px;
+    height: 244px;
+    left: -29px;
+    top: -34px;
+    z-index: 2;
+    background: url(index-img/index-border-tip.png) no-repeat;
+}
+
+.cover-content li:nth-child(2) .border-tip {
+    /* 框2 */
+    background-position-x: -437px;
+    width: 373px;
+    left: -18px;
+}
+
+.cover-content li:nth-child(3) .border-tip {
+    /* 框3 */
+    background-position-x: 100%;
+    left: 0px;
+}
+
+.clearfix:after {
+	/* 实现clearfix 之后 添加一个看不见的块元素 清理浮动 */
+    content: ' ';
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+
+/* share-model start */
+
+.share-model {
+    height: 125px;
+    position: relative;
+    z-index: 10;
+}
+
+.share-model .items {
+    width: 1078px;
+    margin: 0 auto;
+    padding: 42px 0;
+    border-bottom: 1px solid #1c2f37;
+    padding-bottom: 20px;
+}
+
+.share-model li {
+    float: left;
+    margin-right: 39px;
+}
+
+.share-model li a {
+    display: block;
+    background: url(index-img/index-lianxi.png) no-repeat;
+    height: 42px;
+    width: 104px;
+}
+
+.share-model li a:hover {
+    background-position-y: -42px;
+}
+
+.share-model li:nth-child(2) a {
+    width: 118px;
+    background-position-x: -143px;
+}
+
+.share-model li:nth-child(3) a {
+    width: 104px;
+    background-position-x: -301px;
+}
+
+.share-model li:nth-child(4) a {
+    width: 88px;
+    background-position-x: -527px;
+}
+
+.share-model li:nth-child(5) a {
+    position: relative;
+    width: 88px;
+    background-position-x: -654px;
+}
+
+.share-model li:nth-child(6) a {
+    width: 88px;
+    background-position-x: -780px;
+}
+
+.share-model li:nth-child(7) {
+    margin-right: 0;
+}
+
+.share-model li:nth-child(7) a {
+    width: 88px;
+    background-position-x: 100%;
+}
+
+.bottom {
+    height: 180px;
+    background-repeat: no-repeat;
+    z-index: 1;
+    font-size: 12px;
+    color: #959595;
+    position: relative;
+}
+
+.bottom .rel {
+    position: relative;
+    margin: 0 auto;
+    width: 1128px;
+}
+
+.foot_dl {
+    position: absolute;
+    top: 40px;
+}
+
+.foot_dl dt {
+    float: left;
+    padding-left: 15px;
+}
+
+.foot_dl dt a.wanmei {
+    border-right: 1px solid black;
+}
+
+.foot_dl dt a {
+    float: left;
+    padding: 0 11px;
+}
+
+.foot_dl dd {
+    float: right;
+    font-size: 12px;
+    margin: 0;
+    line-height: 1.25rem;
+    max-width: 824px;
+    text-align: left;
+}
+
+.bottom .rel .certificate {
+    position: absolute;
+    top: 85px;
+    left: 85px;
+    color: #333;
+}
+
+.bottom .rel .remark {
+    position: absolute;
+    top: 122px;
+    left: 260px;
+    line-height: 1.5;
+    font-size: 12px;
+    color: #333;
+    text-align: center;
+}

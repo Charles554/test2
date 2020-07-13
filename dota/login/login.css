@@ -1,0 +1,392 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+a,a:hover{
+    text-decoration: none;
+}
+/* --------------------------------------- */
+/* topnav start */
+.topnav-container { 
+    width: 100%;
+    height: 80px;
+    background: url(../All-img/data2.home.nav.bg.png);
+    box-sizing: content-box;
+    color: #827c79;
+    font-size: 16px;
+}
+
+.nav_main{
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+}
+
+    /* navLogo */
+.nav_main .nav_logo {
+    display: block;
+    float: left;
+    width: 260px;
+    height: 40px;
+    margin-top: 20px;
+    margin-right: 20px;
+    text-indent: -1000px;
+    background: url(../All-img/dota2.home.log.png) center top no-repeat;    
+}
+    /* navLogo end */
+
+    /* dota2nav */
+.nav_main .dota2-nav {
+    display: block;
+    float: left;
+    width:644px;
+    height: 100%;
+}
+.dota2-nav .link-div{
+    position: relative;
+    float: left;
+    width: 78px;
+    padding: 20px 7px ;
+    text-align: center;
+    z-index: 1;
+}
+.dota2-nav .link-div:hover{
+    background-color: #0E1113;
+}
+
+.dota2-nav .link-div a{
+    display: block;
+    font-size: 15px;
+    color: #827c79;
+}
+.dota2-nav .link-div span{
+    display: block;
+    font-size: 16px;
+}
+.dota2-nav .link-div .link_nav_e{
+    margin-top: 2px;
+    font-size: 12px;
+    line-height: 16px;
+    transform: scale(0.75);    /* 把字体缩小为原来的0.75倍*/
+}
+/* 下拉导航栏 */
+.nav_main .dota2-nav .link-div .link_pop {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    padding-top: 10px;
+    width: 100%;
+    height: 278px;
+    font-size: 15px;
+    line-height: 30px;
+    text-align: center;
+    background: url(../All-img/data2.home.submenu.bg.png) top center no-repeat;
+    background-size: cover;
+}
+.link-div .link_pop a:hover{
+    color: #00b7f4;
+}
+    /* dota2-nav end */
+
+    /* dota2-user */
+.nav_main .dota2-user {
+    position: relative;
+    display: block;
+    float: right;
+    width:234px;
+    height: 100%;
+    color: #ccc;
+}
+.nav_main .dota2-user .info{
+    margin-left: 65px;
+    height: 100%;
+}
+.nav_main .dota2-user .nav-avatar{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 0;
+    top: 13px;
+    border-radius: 50%;
+    border: 1px solid #262323;
+    box-sizing: content-box;
+    background-color: #101215;
+    background-image: url(../All-img/icons.png);
+    background-position: 13px -451px;
+}
+.nav_main .dota2-user .enter-box{
+    margin-top: 17px;
+    display: block;
+}
+.nav_main .dota2-user .name{
+    font-size: 18px;
+    color: #00b7f4;
+    line-height: 1.2;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0;
+    margin-bottom: 3px;
+}
+.nav_main .dota2-user .name span{
+    color: #fff;
+}
+.nav_main .dota2-user .name a{
+    color: #00b7f4;
+}
+.nav_main .dota2-user .tt{
+    font-size: 12px;
+    color: #898989;
+    padding: 0;
+    line-height: 1.5;
+}
+    /* dota2-user end*/
+/* topnav end */
+/* --------------------------------------- */
+
+/* main */
+.main{
+    width: 100%;
+    height: 840px;
+}
+.wrapper{
+    position: absolute;
+    top: 200px;
+    left: 35%;
+    width: 600px;
+    height: 500px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: url(../All-img/index-bg.png) ;
+    background-size:60% 100%; 
+    background-attachment:fixed;
+    text-align: center;
+    color: #fff;
+    border: #959595 1px solid;
+}
+.wrapper h1{
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+.wrapper .login-notify {
+    display: none;
+    height: 26px;
+    margin-right: 140px;
+    font-size: 12px;
+    color: #db351f;
+}
+.wrapper .login-notify span {
+    vertical-align: middle;
+}
+.wrapper .inputs input{
+    display: inline-block;
+    padding: 0 10px 0 10px;
+    margin-top: 10px;
+    width: 265px;
+    height: 35px;
+    line-height: 35px;
+    color: #fff;
+    font-weight: 500;
+    background: none;
+    border: 1px solid #3b3b3b;
+    box-sizing: border-box;
+    vertical-align: baseline;
+}
+/* 设置placeholder的字体颜色 */
+.wrapper .inputs input::placeholder{           
+    color: #fff;
+}
+.wrapper .login-controls {
+    margin-top: 24px;
+    font-size: 12px;
+    color: #fff;
+}
+.wrapper .login-controls a{
+    color: #fff;
+}
+
+/* 登录按钮 */
+.wrapper .login-btns {
+    margin-top: 11px;
+}
+.wrapper .login-btn {
+    display: block;
+    margin:  0 auto;
+    margin-top: 20px;
+    width: 200px;
+    height: 40px;
+    border-width: 1px;
+    border-style: solid;
+    text-align: center;
+    font-size: 16px;
+    color: #ddd;
+    line-height: 40px;
+    border-radius: 3px;
+    border: 1px solid #d6470e;
+}
+.wrapper .login-btns .login-btn-login{
+    border: none;
+    color: #fff;
+    background-color: #b3571a;
+}
+
+/* 帮助 */
+.wrapper .login-helps {
+    position: absolute;
+    left: 50px;
+    right: 50px;
+    bottom: 28px;
+    padding: 10px 0;
+    overflow: hidden;
+    font-size: 14px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.wrapper .login-helps a {
+    display: inline-block;
+    line-height: 28px;
+    color: #c42f1b;
+}
+
+
+/* 遮罩 */
+#Dota2_overlay {
+    background-color: #000;
+    display: none;
+    height: 100% !important;
+    left: 0;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    z-index: 1003;
+}
+
+/* 微信订阅号 */
+.nav_wxdialog {
+    display: none;
+    position: fixed;
+    z-index: 1004;
+    width: 620px;
+    height: 385px;
+    left: 50%;
+    top: 50%;
+    margin: -192px 0 0 -310px;
+    background: #2a282c url(../All-img/navwx_bg.jpg) no-repeat top center;
+    text-align: center;
+    color: #fff;
+}
+.nav_wxdialog h4 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 54px 0 14px 0;
+}
+.nav_wxdialog p {
+    font-size: 16px;
+    margin-bottom: 45px;
+    color: #999999;
+}
+.nav_wxdialog li {
+    display: inline-block;
+    width: 156px;
+    height: 196px;
+    margin: 0 20px;
+}
+.nav_wxdialog li i {
+    display: block;
+    width: 156px;
+    height: 156px;
+    background-color: #fff;
+}
+.nav_wxdialog .subscribe i {
+    background-image: url(../All-img/navwx_subscribe.png);
+}
+.nav_wxdialog li span {
+    font-size: 14px;
+    line-height: 40px;
+}
+.nav_wxdialog .vservice i {
+    background-image: url(../All-img/navwx_vservice.png);
+}
+.nav_wxdialog .close {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: #3c2728;
+    right: -61px;
+    top: 0;
+}
+.nav_wxdialog .close:after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: url(../All-img/navwx_close.png);
+    opacity: 0.6;
+}
+
+/* --------------------------------------- */
+
+
+/* bottom start */
+.bottom {
+    position: relative;
+    height: 180px;
+    color: #959595;
+    font-size: 12px;
+    background-color: #000;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+.bottom .rel {
+        position: relative;
+        margin: 0 auto;
+        width: 1128px;
+}
+.foot_dl {
+    position: absolute;
+    top: 40px;
+}
+.foot_dl dt {
+    float: left;
+    padding-left: 15px;
+}
+
+.foot_dl dt a.wanmei {
+    border-right: 1px solid black;
+}
+
+.foot_dl dt a {
+    float: left;
+    padding: 0 11px;
+}
+
+.foot_dl dd {
+    float: right;
+    font-size: 12px;
+    margin: 0;
+    line-height: 1.25rem;
+    max-width: 824px;
+    text-align: left;
+}
+
+.bottom .rel .certificate {
+    position: absolute;
+    top: 85px;
+    left: 85px;
+    color: #333;
+}
+
+.bottom .rel .remark {
+    position: absolute;
+    top: 122px;
+    left: 260px;
+    line-height: 1.5;
+    font-size: 12px;
+    color: #333;
+    text-align: center;
+}

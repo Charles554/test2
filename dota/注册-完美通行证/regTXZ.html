@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册账号-完美世界通行证</title>
+    <link rel="stylesheet" type="text/css" href="./regTXZ.css">
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"> </script>
+    <script src="http://static.runoob.com/assets/jquery-validation-1.14.0/dist/jquery.validate.min.js"></script>
+</head>
+<body>
+    <!-- main -->
+    <div class="main">
+        <!-- logo -->
+        <div class="topbar">
+            <div class="logo">
+                <a href="#">
+                    <img src="./img/logo.png" alt="点击进入官网">
+                </a>
+            </div>
+        </div>
+        <!-- 注册区域 -->
+        <div class="wrap">
+            <!-- title -->
+            <h1 class="title">注册完美通行证</h1>
+            <p class="tips">创建支付账号，抢先体验Dota2游戏充值服务</p>
+
+            <!-- tab -->
+            <div class="tab">
+                <a href="javascript:void(0);" class="active">
+                    <span>手机注册（推荐）</span>
+                </a>
+                <a href="javascript:void(0);">
+                        <span>邮箱注册</span>
+                </a>
+            </div>
+
+            <!-- 手机注册 -->
+            <div class="phone-reg">
+                    <form action autocomplete="off">
+                        <!-- 手机号 -->
+                        <div class="box mb20 ">
+                            <input name="username" required="required" class="phoneNum" type="text" placeholder="手机号">
+                            <span class="ihint ihint_error">不能为空</span>
+                        </div>
+                        <!-- 密码 -->
+                        <div class="box mb20 ">
+                                <input name="username" required="required" class="phoneNum" type="password" placeholder="密码（由8-16位大小写字母、数字及字符组成）">
+                                <span class="ihint ihint_error">不能为空</span>
+                        </div>
+                        <!-- 重复密码 -->
+                        <div class="box mb20 " style="margin-bottom:40px;">
+                                <input name="username" required="required" class="phoneNum" type="password" placeholder="重复密码">
+                                <span class="ihint ihint_error">不能为空</span>
+                        </div>
+                        <!-- 真实姓名 -->
+                        <div class="box mb20 ">
+                                <input name="username" required="required" class="phoneNum" type="text" placeholder="真实姓名">
+                                <span class="ihint ihint_error">不能为空</span>
+                        </div>
+                        <!-- 身份证 -->
+                        <div class="box mb20 ">
+                                <input name="username" required="required" class="phoneNum" type="text" placeholder="身份证">
+                                <span class="ihint ihint_error">不能为空</span>
+                        </div>
+                        <!-- 验证码 -->
+                        <div class="vbox " >
+                            <div class="box yzmBox1">
+                                <input name="rand" type="text" placeholder="验证码" required="required">
+                                <i></i>
+                            </div>
+                            <a href="javascript:void(0);" class="getRand">
+                                获取验证码
+                            </a>
+                            <div id="code_box">ADC3</div>
+                        </div>
+                        <div class="btn">
+                            <input type="submit" value="注册">
+                        </div>
+                    </form>
+            </div>
+            <!-- 邮箱注册 -->
+            <div class="email-reg">
+                <form action autocomplete="off">
+                    <!-- 邮箱帐号 -->
+                    <div class="box mb20 ">
+                        <input name="username" required="required" class="phoneNum" type="text" placeholder="邮箱帐号">
+                        <span class="ihint ihint_error">不能为空</span>
+                    </div>
+                    <!-- 密码 -->
+                    <div class="box mb20 ">
+                            <input name="username" required="required" class="phoneNum" type="text" placeholder="密码（由8-16位大小写字母、数字及字符组成）">
+                            <span class="ihint ihint_error">不能为空</span>
+                    </div>
+                    <!-- 重复密码 -->
+                    <div class="box mb20 " style="margin-bottom:40px;">
+                            <input name="username" required="required" class="phoneNum" type="text" placeholder="重复密码">
+                            <span class="ihint ihint_error">不能为空</span>
+                    </div>
+                    <!-- 真实姓名 -->
+                    <div class="box mb20 ">
+                            <input name="username" required="required" class="phoneNum" type="text" placeholder="真实姓名">
+                            <span class="ihint ihint_error">不能为空</span>
+                    </div>
+                    <!-- 身份证 -->
+                    <div class="box mb20 ">
+                            <input name="username" required="required" class="phoneNum" type="text" placeholder="身份证">
+                            <span class="ihint ihint_error">不能为空</span>
+                    </div>
+                    <!-- 手机号 -->
+                    <div class="box mb20">
+                        <input name="username" required="required" class="phoneNum" type="text" placeholder="手机号">
+                        <span class="ihint ihint_error">不能为空</span>
+                    </div>
+                    <!-- 手机验证码 -->
+                    <div class="vbox " >
+                        <div class="box yzmBox1">
+                            <input name="rand" type="text" placeholder="手机验证码" required="required">
+                            <i></i>
+                        </div>
+                        <a href="javascript:void(0);" class="getMobileRand">
+                            获取验证码
+                        </a>
+                        <div id="phoneCode_box">6548</div>
+                    </div>
+                    <!-- checkbox -->
+                    <div class="cbox">
+                        <br>
+                        <input type="checkbox" id="" checked="checked">
+                        <span>
+                            我接受
+                            <a target="_blank" href="http://static.wanmei.com/passport/agreement/003.html">《完美通行证用户协议》</a>
+                            <a target="_blank" href="http://static.wanmei.com/passport/agreement/005.html">《隐私政策》</a>
+                        </span>
+                    </div>
+                    <div class="btn">
+                        <input type="submit" value="注册">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- bottom start -->
+    <div class="bottom">
+                <div class="rel">
+                    <dl class="foot_dl">
+                        <dt>
+                                <!-- 完美世界.png -->
+                                <a class="wanmei" href="#" target="_blank">
+                                    <img src="img/index-logo-wanmei20180327.png" alt>
+                                </a>
+                                <!-- Valve.png -->
+                                <a href="#" target="_blank">
+                                    <img src="img/index-logo-valve.png" alt>
+                                </a>
+                            </dt>
+                        <dd>
+                            © 完美世界 版权所有　Perfect World. All Rights Reserved.
+                            <br> © 2012 Valve Corporation. All Rights reserved. Licensed to Beijing Perfect World Network Technology Co., Ltd. in China
+                        </dd>
+                    </dl>
+                    <p class="certificate">
+                        京ICP证：050016号
+                        <a href="#" target="_blank" style="color:#959595;">《网络文化经营许可证》编号：京网文[2017]8929-1007号</a> 《网络视听许可证》编号：0110587
+                        <br> 京公网安备11010502033859号
+                        <a href="#" target="_blank" style="color:#959595">
+                            <img src="img/index-icon-gamenettag.png"> 文网进字[2013] 028号
+                        </a>
+                        新出审字<a href="#" style="color: #53bdfa;text-decoration: underline;" target="_blank">[2013] 1505号</a> ISBN：978-7-89989-826-0 |
+                        <a href="#" style="color:#53bdfa;" target="_blank">家长监护</a> "|"
+                        <a href="#" style="color:#53bdfa;" target="_blank">纠纷处理</a> "|"
+                        <a href="#" style="color:#53bdfa;" target="_blank">营业执照</a> "|"
+                        <a href="#" style="color:#53bdfa;" target="_blank">儿童隐私保护指引</a>
+                    </p>
+                    <p class="remark">本网络游戏适合年满17岁以上的用户使用：请您确定已如实进行实名注册。为了您的健康，请合理控制游戏时间。</p>
+                </div>
+    </div>
+</body>
+<script>
+    $(document).ready(function(){
+        // tab栏切换
+        $(".tab a").click(function(){
+            $(".tab a").removeClass();
+            $(this).addClass("active");
+            if($(".tab a")[1].className=="active"){
+                $('.phone-reg').hide();
+                $('.email-reg').show();
+            }
+            else{
+                $('.phone-reg').show();
+                $('.email-reg').hide();
+            }
+        });
+
+        // input 获得焦点
+        $('form input').focus(function(){
+            $(this).parent().addClass('onfocus');
+            $(this).parent().siblings().removeClass('onfocus');         // 用siblings() 取消除聚焦元素以外同级元素的class
+            $('.yzmBox1').removeClass('onfocus');
+        });
+        $('.yzmBox1 input').focus(function(){
+            $('.yzmBox1').addClass('onfocus');
+            $('.mb20').removeClass('onfocus');
+        });
+        // input 失去焦点
+        $('form input').blur(function(){
+            if($('input').val()==''){
+                $(this).parent().addClass('error');
+                $('.yzmBox1').removeClass('error');
+                $(this).next().css('display','block');
+            }
+        });
+
+        // 获取验证码
+        var code_box = document.getElementById("code_box");
+        var phoneCode_box = document.getElementById("phoneCode_box");
+        function refreshCode() {
+            //定义一个62个字符的数组 
+            var code = '0123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM',
+                phoneCode='0123456789',
+                char = '',
+                result = '',
+                result2='';
+            for (var i = 0; i < 4; i++) {
+                // 随机选择一位 0--61的随机的索引数字
+                var code_index = Math.round(Math.random()*61);
+                var phoneCode_index= Math.round(Math.random()*10);      //手机验证码
+                //得到随机的索引  取出随机地字符
+                var char = code[code_index];
+                var char2 =phoneCode[phoneCode_index];    //手机验证码
+                if (result.toUpperCase().indexOf(char.toUpperCase()) > -1)
+                //indexOf() == -1 说明结果里边没有要找的字符 那么 > -1 就是 里边有重复的字符
+                {	
+                 i --;     // 如果条件成立，那么本轮循环就结束进行下一轮循环（自然i就加1了），那么本轮本应该取出的字符就没有了
+                 continue;  //终止本轮循环 进行下一轮
+                }
+                result += char;
+
+                // 手机验证码 
+                if (result2.toUpperCase().indexOf(char2.toUpperCase()) > -1)
+                {	
+                 i --;      
+                 continue;  
+                }
+                result2 += char2;
+            }
+            code_box.innerHTML = result;
+            phoneCode_box.innerHTML =result2;
+        }
+        //点击事件
+        code_box.onclick = refreshCode;
+        phoneCode_box.onclick = refreshCode;
+
+        $('.getRand').click(function(){
+            $('#code_box').show();
+        });
+        $('.getMobileRand').click(function(){
+            $('#phoneCode_box').show();
+        });
+    });
+
+    // 官方微信
+    $(function(){
+        $('#j-navwxlink').click(function(){
+            $('#Dota2_overlay').css('display','block');
+            $('#j-navwxdialog').css('display','block');
+        });
+        $('#j-wxclose').click(function(){
+            $('#Dota2_overlay').css('display','none');
+            $('#j-navwxdialog').css('display','none');
+        });
+    })
+</script>
+</html>

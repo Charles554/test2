@@ -1,0 +1,490 @@
+/* all */
+* {
+    margin: 0;
+    padding: 0;
+}
+a,a:hover{
+    text-decoration: none;
+}
+
+/* topnav start */
+.topnav-container { 
+    width: 100%;
+    height: 80px;
+    background: url(./Reg-img/data2.home.nav.bg.png);
+    box-sizing: content-box;
+    color: #827c79;
+    font-size: 16px;
+}
+
+.nav_main{
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+}
+
+    /* navLogo */
+.nav_main .nav_logo {
+    display: block;
+    float: left;
+    width: 260px;
+    height: 40px;
+    margin-top: 20px;
+    margin-right: 20px;
+    text-indent: -1000px;
+    background: url(./Reg-img/dota2.home.log.png) center top no-repeat;    
+}
+    /* navLogo end */
+
+    /* dota2nav */
+.nav_main .dota2-nav {
+    display: block;
+    float: left;
+    width:644px;
+    height: 100%;
+}
+.dota2-nav .link-div{
+    position: relative;
+    float: left;
+    width: 78px;
+    padding: 20px 7px ;
+    text-align: center;
+}
+.dota2-nav .link-div:hover{
+    background-color: #0E1113;
+}
+
+.dota2-nav .link-div a{
+    display: block;
+    font-size: 15px;
+    color: #827c79;
+}
+.dota2-nav .link-div span{
+    display: block;
+    font-size: 16px;
+}
+.dota2-nav .link-div .link_nav_e{
+    margin-top: 2px;
+    font-size: 12px;
+    line-height: 16px;
+    transform: scale(0.75);    /* 把字体缩小为原来的0.75倍*/
+}
+/* 下拉导航栏 */
+.nav_main .dota2-nav .link-div .link_pop {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    padding-top: 10px;
+    width: 100%;
+    height: 278px;
+    font-size: 15px;
+    line-height: 30px;
+    text-align: center;
+    background: url(./Reg-img/data2.home.submenu.bg.png) top center no-repeat;
+    background-size: cover;
+}
+.link-div .link_pop a:hover{
+    color: #00b7f4;
+}
+    /* dota2-nav end */
+
+    /* dota2-user */
+    .nav_main .dota2-user {
+    position: relative;
+    display: block;
+    float: right;
+    width:234px;
+    height: 100%;
+    color: #ccc;
+}
+.nav_main .dota2-user .info{
+    margin-left: 65px;
+    height: 100%;
+}
+.nav_main .dota2-user .nav-avatar{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 0;
+    top: 13px;
+    border-radius: 50%;
+    border: 1px solid #262323;
+    box-sizing: content-box;
+    background-color: #101215;
+    background-image: url(./Reg-img/icons.png);
+    background-position: 13px -451px;
+}
+.nav_main .dota2-user .enter-box{
+    margin-top: 17px;
+    display: block;
+}
+.nav_main .dota2-user .name{
+    font-size: 18px;
+    color: #00b7f4;
+    line-height: 1.2;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0;
+    margin-bottom: 3px;
+}
+.nav_main .dota2-user .name span{
+    color: #fff;
+}
+.nav_main .dota2-user .name a{
+    color: #00b7f4;
+}
+.nav_main .dota2-user .tt{
+    font-size: 12px;
+    color: #898989;
+    padding: 0;
+    line-height: 1.5;
+}
+    /* dota2-user end*/
+/* topnav end */
+
+
+/* main start */
+.main{
+    width: 100%;
+    height: auto;
+    color: #fff;
+}
+section{
+    display: block;
+}
+/* section 1  */
+.main .sec1{
+    width: 100%;
+    height: 500px;
+    background: url(./Reg-img/secheader.jpg) no-repeat center;
+}
+/* section 2  */
+.main .sec2{
+    position: relative;
+    width: 100%;
+    height: 673px;
+    background: url(./Reg-img/sec12.jpg) no-repeat center;
+    overflow: hidden;
+}
+/* 第一步 下载安装 */
+.main .sec2 .firstStep{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    margin-left: -153px;
+    width: 307px;
+    height: 131px;
+    background: url(./Reg-img/icon-notice.png) no-repeat 0 -790px;
+}
+.main .sec2 .cover{
+    position: relative;
+    width: 100%;
+    height: 358px;
+    background: url(./Reg-img/cover-bg.png) no-repeat center;
+    margin: 0 auto;
+    margin-top: 183px;
+    margin-left: -50px;
+}
+/* cover_left */
+.main .sec2 .cover_left{
+    position: absolute;
+    left: 50%;
+    top: 44px;
+    width: 370px;
+    height: 270px;
+    margin-left: -444px;
+    /* background-color: #fff; */
+}
+.main .sec2 .cover_left a{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background-color: #fff; */
+}
+
+/* cover_right */
+.main .sec2 .cover_right{
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    width: 472px;
+    height: 273px;
+    margin-left: 15px;
+    padding-top: 16px;
+}
+.main .sec2 .cover_right .title{
+    font-size: 20px;
+    line-height: 59px;
+    height: 59px;
+}
+.main .sec2 .cover_right .title span{
+    font-size: 32px;
+}
+.main .sec2 .cover_right .desc{
+    color: #888888;
+    /* text-indent: 2em; */
+}
+.main .sec2 .cover_right a{
+    display: block;
+    width: 220px;
+    height: 67px;
+    background: url(./Reg-img/btn.png);
+    margin-top: 30px;
+}
+
+/* 移动导航 */
+.main .sec2 .aside{
+    position: fixed;
+    top: 50%;
+    right: 10px;
+    margin-top: -235px;
+    width: 237px;
+    height: 471px;
+    background: url(./Reg-img/icon-content.png) no-repeat center;
+    z-index: 10;
+}
+.main .sec2 .aside a{
+    display: block;
+    width: 100%;
+    height: 121px;
+}
+.main .sec2 .aside .activeFloor0{   
+    background: url(./Reg-img/btn.png) no-repeat 0 -819px;              /*当前第一步*/
+}
+.main .sec2 .aside .activeFloor1{
+    background: url(./Reg-img/btn.png) no-repeat 0 -1061px;             /* 当前第二步*/
+}
+.main .sec2 .aside .activeFloor2{
+    background: url(./Reg-img/btn.png) no-repeat 0 -1303px;             /* 当前第三步*/
+}
+.aside a:nth-of-type(1) {  /*第一个*/
+    background: url(./Reg-img/btn.png) no-repeat 0 -698px;
+}
+.aside a:nth-of-type(2) {  /*第二个*/
+    margin-top: 54px;
+    background: url(./Reg-img/btn.png) no-repeat 0 -940px;
+}
+.aside a:nth-of-type(3) {   /*第三个*/
+    margin-top: 54px;
+    background: url(./Reg-img/btn.png) no-repeat 0 -1182px;
+}
+
+/* section 3 */
+.main .sec3{
+    position: relative;
+    width: 100%;
+    height: 1392px;
+}
+/* 第二步 注册教程 */
+.main .sec3 .secondStep{
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    width: 629px;
+    height: 167px;
+    background: url(./Reg-img/icon-notice.png) no-repeat 0 -921px;
+    margin-left: -315px;
+}
+/* 注册上两步 */
+.regStep .reg_Top{
+    height: 776px;
+    background: url(./Reg-img/sec3-top.jpg) no-repeat center;
+}
+/* 注册下两步 */
+.regStep .reg_Bottom{
+    height: 616px;
+    background: url(./Reg-img/sec3-bottom.jpg) no-repeat center;
+}
+.regStep .reg_Bottom .notice{
+    position: absolute;
+    top: 78%;
+    left: 50%;
+    width: 370px;
+    height: 145px;
+    margin-left: 180px;
+    line-height: 27px;
+    background: url(./Reg-img/icon-notice.png) no-repeat 0 0;
+    box-sizing: border-box;
+    padding: 22px 0 0 68px;
+}
+/* section 4 */
+/* 第三步 绑定 */
+.main .sec4{
+    position: relative;
+    width: 100%;
+    height: 1998px;
+}
+.main .sec4 span{
+    text-align: center;
+    display: block;
+    width: 100%;
+    font-size: 20px;
+}
+.main .sec4 .bind_Top{
+    height: 770px;
+    background: url(./Reg-img/sec4-top.jpg) no-repeat center;
+    overflow: hidden;
+}
+.main .sec4 .bind_Top .thirdStep{
+    position: absolute;
+    top: 4%;
+    left: 50%;
+    width: 578px;
+    height: 167px;
+    margin-left: -289px;
+    background: url(./Reg-img/icon-notice.png) no-repeat 0 -1088px;
+}
+.main .sec4 .bind_Top .bind_Top_notice{
+    position: absolute;
+    top: 17%;
+    left: 50%;
+    width: 295px;
+    height: 165px;
+    margin-left: 245px;
+    line-height: 26px;
+    padding: 50px 0 0 27px;
+    box-sizing: border-box;
+    background: url(./Reg-img/icon-notice.png) no-repeat 0 -145px;
+}
+.bind_Top_notice i {
+    color: #fff22b;
+    font: inherit;
+}
+.main .sec4 .bind_Top span{
+    margin-top: 733px;
+}
+.main .sec4 .bind_Middle{
+    height: 455px;
+    background: url(./Reg-img/sec4-middle.jpg) no-repeat center;
+    overflow: hidden;
+}
+.main .sec4 .bind_Bottom{
+    height: 773px;
+    background: url(./Reg-img/sec4-bottom.jpg) no-repeat center;
+    overflow: hidden;
+}
+
+/* section 5 */
+.main .sec5{
+    width: 100%;
+    height: 977px;
+    background: url(./Reg-img/sec5.jpg) no-repeat center;
+    overflow: hidden;
+}
+.main .sec5 .faq{
+    width: 1190px;
+    height: 520px;
+    margin: 0 auto;
+    margin-top: 224px;
+}
+.main .sec5 .faq .que{
+    font-size: 25px;
+    color: #00b7f4;
+}
+.main .sec5 .faq .ans{
+    line-height: 28px;
+    font-size: 18px;
+}
+.main .sec5 .faq .more{
+    display: block;
+    width: 408px;
+    height: 100px;
+    margin-top: 40px;
+    margin: 0 auto;
+    background: url(./Reg-img/btn.png) no-repeat 0 -134px;
+}
+.main .sec5 .faq .btn {
+    width: 830px;
+    height: 185px;
+    margin: 0 auto;
+    margin-top: 66px;
+    font-size: 20px;
+}
+.main .sec5 .faq .btn a{
+    display: inline-block;
+    width: 329px;
+    height: 91px;
+    margin-top: 30px;
+}
+.faq .btn .btn-reg{
+    float: left;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
+.faq .btn .btn-down{
+    float: right;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
+
+.faq .btn .btn-reg .btn-wanmei{
+    background: url(./Reg-img/btn.png) no-repeat 0 -334px;
+}
+.faq .btn .btn-down .btn-download{
+    background: url(./Reg-img/btn.png) no-repeat 0 -516px;
+}
+/* main end */
+
+
+/* bottom start */
+.bottom {
+    position: relative;
+    height: 180px;
+    color: #959595;
+    font-size: 12px;
+    background-color: #000;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+.bottom .rel {
+        position: relative;
+        margin: 0 auto;
+        width: 1128px;
+}
+.foot_dl {
+    position: absolute;
+    top: 40px;
+}
+.foot_dl dt {
+    float: left;
+    padding-left: 15px;
+}
+
+.foot_dl dt a.wanmei {
+    border-right: 1px solid black;
+}
+
+.foot_dl dt a {
+    float: left;
+    padding: 0 11px;
+}
+
+.foot_dl dd {
+    float: right;
+    font-size: 12px;
+    margin: 0;
+    line-height: 1.25rem;
+    max-width: 824px;
+    text-align: left;
+}
+
+.bottom .rel .certificate {
+    position: absolute;
+    top: 85px;
+    left: 85px;
+    color: #333;
+}
+
+.bottom .rel .remark {
+    position: absolute;
+    top: 122px;
+    left: 260px;
+    line-height: 1.5;
+    font-size: 12px;
+    color: #333;
+    text-align: center;
+}
